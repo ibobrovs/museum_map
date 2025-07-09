@@ -15,13 +15,6 @@ m = folium.Map(location=[lat_center, lon_center], zoom_start=7)
 # Clastering markers
 marker_cluster = MarkerCluster().add_to(m)
 
-# Icons
-icon_map = {
-    "cemetery": ("cross-sign", "black"),
-    "monument": ("info-sign", "blue"),
-    "fortification": ("tower", "green"),
-}
-
 # Marker creation
 for idx, row in df.iterrows():
     icon_name, color = icon_map.get(row['type'], ("question-sign", "gray"))
