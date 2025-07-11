@@ -45,7 +45,7 @@ if set -q PYTHONHOME
 end
 
 if test -z "$VIRTUAL_ENV_DISABLE_PROMPT"
-    # fish uses a function instead of an env var to generate the prompt.
+    # fish uses a function instead of an env let to generate the prompt.
 
     # Save the current fish_prompt function as the function _old_fish_prompt.
     functions -c fish_prompt _old_fish_prompt
